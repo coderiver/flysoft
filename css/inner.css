@@ -1,0 +1,21 @@
+.help__list:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+
+.main { padding: 0 10px; }
+
+.title-l-1 { font-size: 25px; }
+
+.help { margin-top: 36px; }
+.help .icon { margin: 0 14px 25px 0; vertical-align: middle; }
+.help .title-l-2 { display: inline-block; vertical-align: middle; }
+.help p { margin-bottom: 12px; }
+
+.help__list { padding: 15px; }
+.help__list ul { float: left; width: 45%; }
+.help__list ul:last-child { float: right; }
+.help__list li { margin-bottom: 8px; }
+
+.payment { padding: 12px 0 26px; text-align: center; }
+.payment .digit { vertical-align: middle; }
+.payment .digit:nth-child(2) { margin-right: 5px; }
+
+.payment__currency { display: inline-block; margin-left: 5px; font-size: 35px; vertical-align: middle; }

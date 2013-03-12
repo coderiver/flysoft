@@ -1,2 +1,52 @@
 @import "base";
- 
+.main {
+    padding: 0 10px;
+}
+.title-l-1 {
+    font-size: 25px;
+}
+.help {
+    margin-top: 36px;
+    .icon {
+        margin: 0 14px 25px 0;
+        vertical-align: middle;
+    }
+    .title-l-2 {
+        display: inline-block;
+        vertical-align: middle;
+    }
+    p {
+        margin-bottom: 12px;
+    }
+}
+.help__list {
+    padding: 15px;
+    @extend %clr;
+    ul {
+        float: left;
+        width: 45%;
+        &:last-child {
+            float: right;
+        }
+    }
+    li {
+        margin-bottom: 8px;
+    }
+}
+
+.payment {
+    padding: 12px 0 26px;
+    text-align: center;
+    .digit {
+        vertical-align: middle;
+        &:nth-child(2) {
+            margin-right: 5px;
+        }
+    }
+}
+.payment__currency {
+    display: inline-block;
+    margin-left: 5px;
+    font-size: 35px;
+    vertical-align: middle;
+}
