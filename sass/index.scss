@@ -1,1 +1,109 @@
 @import "base";
+.main {
+    padding: 0 10px;
+}
+.title-l-1 {
+    margin-bottom: 12px;
+    font-size: 30px;
+}
+.team {
+    margin: -20px 0 28px;
+    @extend %clr;
+    .icon_team {
+        float: left;
+        @include respond-to(mob) {
+            margin-left: -7px;
+        }
+    }
+}
+.team__title {
+    float: right; 
+    margin-top: 68px;
+    line-height: 1;
+    @include respond-to(mob) {
+        margin-right: -10px;
+    } 
+    span {
+        display: block;
+        font-size: 30px;
+    }
+}
+.team__text  {
+    clear: both;
+    padding-top: 25px;
+}
+
+.history {
+    margin: 0 auto 32px;
+    padding: 21px 10px 0 17px;
+    color: #fff;
+    @include box-sizing(border-box);
+    @include sized-spriter($icons, about);
+}
+.history__date {
+    margin-bottom: 42px;
+    line-height: 1;
+    span {
+        display: block;
+        font-size: 40px;
+        white-space: nowrap;
+    }
+}
+
+.ifunny {
+    margin-bottom: 17px;
+    .icon_smile {
+        float: left;
+    }
+}
+.ifunny__main {
+    float: right;
+    padding-top: 38px;
+    text-align: center;
+    .icon_ifunny {
+        display: block;
+        margin-bottom: 8px;
+    }
+    .icon_android,
+    .icon_ios {
+        vertical-align: middle;
+    }
+}
+.ifunny__about {
+    clear: both;
+    padding-top: 25px;
+}
+
+.jobs-wrap {
+    p {
+        margin-bottom: 12px;
+    }
+}
+.job {
+    padding: 18px 0 0 25px;
+    text-align: justify;
+    ol {
+        li {
+            margin-bottom: 12px;
+        }
+    }
+    .icon_tester {
+        margin-left: -16px;
+    }
+}
+.job__item {
+    display: inline-block;
+    vertical-align: top;
+    &:last-child {
+        width: 100%;
+        height: 0;
+    }
+    div {
+        margin-bottom: 18px;
+        height: 112px;
+        line-height: 112px;
+        .icon {
+            vertical-align: bottom;   
+        }
+    }
+}

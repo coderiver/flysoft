@@ -1,0 +1,40 @@
+.team:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+
+.main { padding: 0 10px; }
+
+.title-l-1 { margin-bottom: 12px; font-size: 30px; }
+
+.team { margin: -20px 0 28px; }
+.team .icon_team { float: left; }
+@media only screen and (max-width: 320px) { .team .icon_team { margin-left: -7px; } }
+
+.team__title { float: right; margin-top: 68px; line-height: 1; }
+@media only screen and (max-width: 320px) { .team__title { margin-right: -10px; } }
+.team__title span { display: block; font-size: 30px; }
+
+.team__text { clear: both; padding-top: 25px; }
+
+.history { margin: 0 auto 32px; padding: 21px 10px 0 17px; color: #fff; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; background: url('../img/icons-s1ba9ff24c3.png') 0 -505px no-repeat; background-position: 0 -253px; width: 300px; height: 222px; -moz-background-size: 300px 1409px; -webkit-background-size: 300px 1409px; background-size: 300px 1409px; }
+
+.history__date { margin-bottom: 42px; line-height: 1; }
+.history__date span { display: block; font-size: 40px; white-space: nowrap; }
+
+.ifunny { margin-bottom: 17px; }
+.ifunny .icon_smile { float: left; }
+
+.ifunny__main { float: right; padding-top: 38px; text-align: center; }
+.ifunny__main .icon_ifunny { display: block; margin-bottom: 8px; }
+.ifunny__main .icon_android, .ifunny__main .icon_ios { vertical-align: middle; }
+
+.ifunny__about { clear: both; padding-top: 25px; }
+
+.jobs-wrap p { margin-bottom: 12px; }
+
+.job { padding: 18px 0 0 25px; text-align: justify; }
+.job ol li { margin-bottom: 12px; }
+.job .icon_tester { margin-left: -16px; }
+
+.job__item { display: inline-block; vertical-align: top; }
+.job__item:last-child { width: 100%; height: 0; }
+.job__item div { margin-bottom: 18px; height: 112px; line-height: 112px; }
+.job__item div .icon { vertical-align: bottom; }

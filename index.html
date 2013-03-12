@@ -3,8 +3,10 @@
 <!--[if gt IE 8]><!--><html lang="ru-RU"><!--<![endif]-->
 <head>
 	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name = "format-detection" content = "telephone=no">
 	<title>Template</title>
-	<link rel="stylesheet" media="screen" href="css/screen.css" >
+	<link rel="stylesheet" media="screen" href="css/screen.css">
     <script src="js/jquery.tools.min.js"></script>
     <script src="js/common.js"></script>  
     <!--[if lt IE 9]> 
@@ -13,9 +15,105 @@
 </head>
 <body>
 <div class="l-layout">
-    <header class="header"></header>
+    <header class="header">
+        <div class="header__top">
+            <h1 class="header__logo"><a href="#"></a></h1>
+            <ul class="soc">
+                <li><a href="#" class="soc__tw"></a></li>
+                <li><a href="#" class="soc__fb"></a></li>
+                <li><a href="#" class="soc__vk"></a></li>
+                <li><a href="#" class="soc__h"></a></li>
+            </ul>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#">Команда</a></li>
+                    <li><a href="#">iFunny</a></li>
+                    <li><a href="#">Вакансии</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>                              
+            </nav>
+        </div>
+        <div class="header__bottom"></div>
+    </header>
+    <div class="main">
+        <div class="team">
+            <i class="icon icon_team"></i>
+            <div class="team__title">
+                flysoft ― это не компания.
+                <span>Это команда.</span>
+            </div>
+            <div class="team__text">Нас немного, но, благодаря скорости развития и сплоченности, мы успешно играем в одной лиге с самыми громкими компаниями Кремниевой Долины. Даже на их поле.</div>
+        </div>
+        <div class="history">
+            <div class="history__date">Мы существуем с 2004 года. <span>Живем с 2010.</span></div>
+            <div>За время своего существования мы с успехом выпустили на рынок 27 мобильных приложений и игр, но свою жизнь мы посвятили одному единственному проекту ― <strong>iFunny :)</strong></div>
+        </div>
+        <div class="ifunny">
+            <i class="icon icon_smile"></i>
+            <div class="ifunny__main">
+                <i class="icon icon_ifunny"></i>
+                <i class="icon icon_android-s"></i>
+                <i class="icon icon_ios-s"></i>
+            </div>
+            <div class="ifunny__about">
+                <p>Каждый день iFunny делает чуточку счастливее более <strong>3 миллионов</strong> человек. Объединяя юмор и технологии, мы намерены стать крупнейшим поставщиком хорошего настроения в мире.</p>
+                <a href="#">Подробнее</a>
+            </div>
+        </div>
+        <div class="jobs-wrap">
+            <h1 class="title-l-1">Будь в команде</h1>
+            <p>Каждый игрок в команде flysoft отвечает за значительную часть продукта. Иногда это непросто. Однако, именно это позволяет ярко ощутить вкус победы каждому из нас.</p>
+            <p>Труд может приносить удовольствие. Мы верим в это и действительно любим то, чем занимаемся. Мы уверены, что только такая команда способна создать продукт мирового уровня.</p>
+            <ul class="job">
+                <li class="job__item">
+                    <div><i class="icon icon_ios"></i></div>
+                    <ol>
+                        <li><a href="#">Старший<br> iOS-разработчик</a></li>
+                        <li><a href="#">Младший<br> iOS-разработчик</a></li>
+                    </ol>
+                </li>
+                <li class="job__item">
+                    <div><i class="icon icon_android"></i></div>
+                    <ol>
+                        <li><a href="#">Младший<br> Android-разработчик</a></li>
+                    </ol>
+                </li>
+                <li class="job__item">
+                    <div><i class="icon icon_php"></i></div>
+                    <ol>
+                        <li><a href="#">Старший<br> PHP-разработчик</a></li>
+                        <li><a href="#">Младший<br> PHP-разработчик</a></li>
+                    </ol>
+                </li>
+                <li class="job__item">
+                    <div><i class="icon icon_frontend"></i></div>
+                    <ol>
+                        <li><a href="#">Front-end <br>разработчик</a></li>
+                    </ol>
+                </li>
+                <li class="job__item">
+                    <div><i class="icon icon_tester"></i></div>
+                    <ol>
+                        <li><a href="#">Тестировщик<br> проектов</a></li>
+                    </ol>
+                </li>
+                <li class="job__item"></li>
+            </ul>
+        </div>
+    </div>
     <div class="push"></div>
 </div>
-<footer class="footer"></footer>
+<footer class="footer">
+    <div class="footer__info">
+        <a href="#" class="footer__logo"></a>
+        <a href="mailto:office@flysoft.ru" class="footer__mail">office@flysoft.ru</a>
+    </div>
+    <ul class="soc">
+        <li><a href="#" class="soc__tw"></a></li>
+        <li><a href="#" class="soc__fb"></a></li>
+        <li><a href="#" class="soc__vk"></a></li>
+        <li><a href="#" class="soc__h"></a></li>
+    </ul>
+</footer>
 </body>
 </html>

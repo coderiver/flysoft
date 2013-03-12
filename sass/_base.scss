@@ -11,10 +11,10 @@ $experimental-support-for-svg: true;
 $icons: sprite-map("icons/*.png", $spacing: 10px);
 
 // responsive
-$break-small: 500px;
+$break-small: 320px;
 $break-large: 1180px;
 @mixin respond-to($media) {
-  @if $media == pda {
+  @if $media == mob {
     @media only screen and (max-width: $break-small) { @content; }
   }
   @else if $media == wide {
@@ -28,7 +28,7 @@ $break-large: 1180px;
   }
 }
 
-// BACKGROUND SIZE
+// BACKGROUND SIZE 
 @mixin background-size($width: 100%, $height: 100%) {
      -moz-background-size: $width $height;
   -webkit-background-size: $width $height;
@@ -134,10 +134,25 @@ $break-large: 1180px;
   width: image-width($path);
   height: image-height($path);
 }
+//for retina
+@mixin image-sizer($path){
+  width: image-width($path)/2;
+  height: image-height($path)/2;
+}
+
 @mixin sized-sprite($map, $sprite){
   background: sprite($map, $sprite) no-repeat;
   @include image-size(sprite-file($map, $sprite));
 }
+//for retina
+@mixin sized-spriter($map, $sprite){
+  background: sprite($map, $sprite) no-repeat;
+  $ypos: round(nth(sprite-position($map, $sprite), 2) / 2);
+  background-position: 0 $ypos;
+  @include image-sizer(sprite-file($map, $sprite));
+  @include background-size(ceil(image-width(sprite-path($map)) / 2), ceil(image-height(sprite-path($map)) / 2));
+}
+
 
 // fonts
 @mixin font {

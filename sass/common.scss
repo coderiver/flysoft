@@ -45,21 +45,16 @@ table {
 *{-webkit-text-size-adjust: none; }
 /* ------------------------------------- //END Reset css --------------------------------------- */
 /* ----------------------------------------- Main styles --------------------------------------- */
-body{
-    min-width: 1000px;
-    color: #474747;
-    @include font;
-    font-size: 15px;
-    line-height: 1.4;
+body {
+    min-width: 320px;
+    color: #383838;
+    font: normal 14px/1.4 "Calibri", Arial, sans-serif;
 }
-a{
-    color:#00919e;
-    &:hover{
-        text-decoration:none
-    }
+a {
+    color: #1682c5;
 }
 .l-layout {
-    margin: 0 auto -120px;
+    margin: 0 auto -100px;
     position: relative;
     min-height: 100%;
     height: auto !important;
@@ -67,25 +62,114 @@ a{
 }
 .push {
     clear: both;
-    height: 120px;
+    height: 100px;
 }
 .wrapper {
     overflow: hidden;
 }
 .wrap {
-    @extend %clr;
+    @extend %clr; 
 }
 /* ------------------------------------ //END Main styles --------------------------------------- */
  
 /* ----------------------------------------- Header --------------------------------------------- */
+.header {
+    
+}
+.header__top {
+    padding: 19px 10px 5px;
+    @extend %clr;
+    border-bottom: 1px solid #2a2a2a;
+    @include background-image(linear-gradient(top, #000, #313131));
+}
+.header__logo {
+    float: left;
+    a {
+        display: block;
+        @include sized-spriter($icons, logo);   
+    }
+}
+.nav {
+    padding-top: 30px;
+    clear: both;
+    ul {
+        @extend %clr;
+    }
+    li {
+        position: relative;
+        float: left;
+        width: 25%;
+        text-align: center;
+        &:last-child {
+            &:after {
+                display: none;
+            }
+        }
+        &:after {
+            content: "";
+            position: absolute;
+            right: -8%;
+            top: 5px;
+            @include sized-spriter($icons, sep);  
+        }
+    }
+    a {
+        color: #c1c1c1;
+        text-decoration: none;
+    }
+}
+.header__bottom {
+    height: 126px;
+    background: url(../img/header-bg.png) 0 0 repeat-x;
+}
 /* -------------------------------------- //END Header ------------------------------------------ */
 
 /* ------------------------------------- Independent blocks -------------------------------------- */
+.icon {display: inline-block;}
+.icon_team {@include sized-spriter($icons, team);}
+.icon_smile {@include sized-spriter($icons, smile);}
+.icon_ifunny {@include sized-spriter($icons, ifunny);}
+.icon_android-s {@include sized-spriter($icons, icon-android);}
+.icon_ios-s {@include sized-spriter($icons, icon-ios);}
+.icon_ios {@include sized-spriter($icons, ios);}
+.icon_android {@include sized-spriter($icons, android);}
+.icon_php {@include sized-spriter($icons, php);}
+.icon_tester {@include sized-spriter($icons, tester);}
+.icon_frontend {@include sized-spriter($icons, frontend);}
+.soc {
+    float: right;
+    @extend %clr;
+    li {
+        float: left;
+        margin-left: 12px;
+    }
+    a {
+        display: block;
+    }
+}
+.soc__tw {@include sized-spriter($icons, tw);}
+.soc__fb {@include sized-spriter($icons, fb);}
+.soc__vk {@include sized-spriter($icons, vk);}
+.soc__h {@include sized-spriter($icons, h);}
 /* ---------------------------------- //END Independent blocks ----------------------------------- */
 
 /* ----------------------------------------- Footer ---------------------------------------------- */
 .footer {
-    position: relative;
-    height: 120px;
+    position: relative; 
+    padding: 25px 10px 0; 
+    height: 75px;
+    @extend %clr;
+    .soc {
+        padding-top: 5px;
+    }
+}
+.footer__info {
+    float: left;
+    text-align: right;
+}
+.footer__logo {
+    display: block;
+    margin-bottom: 2px;
+    @include sized-spriter($icons, logo2);
 }
 /* -------------------------------------- //END Footer ------------------------------------------- */
