@@ -6,7 +6,7 @@
 .page-title { margin-bottom: 25px; }
 .page-title .icon { margin-right: 15px; vertical-align: middle; }
 .page-title .title-l-2 { display: inline-block; vertical-align: middle; }
-@media only screen and (max-width: 320px) { .page-title span { display: block; } }
+@media only screen and (max-width: 480px) { .page-title span { display: block; } }
 
 .title-l-1 { font-size: 25px; }
 
@@ -28,9 +28,9 @@
 .vacancy { margin-top: 25px; }
 .vacancy ul { margin-bottom: 12px; }
 .vacancy li { position: relative; padding-left: 15px; margin-bottom: 15px; }
-.vacancy li:before { content: "―"; position: absolute; left: 0; top: -1px; }
+.vacancy li:before { content: ""; position: absolute; left: 0; top: 9px; width: 10px; height: 1px; background: #383838; }
 
-.info-item { margin: 25px 0 32px; padding: 15px 17px; border: 1px solid #aaa; -webkit-border-radius: 5px; -moz-border-radius: 5px; -ms-border-radius: 5px; -o-border-radius: 5px; border-radius: 5px; }
+.info-item { margin: 25px 0 32px; padding: 15px 17px; border: 1px solid #aaaaaa; -webkit-border-radius: 5px; -moz-border-radius: 5px; -ms-border-radius: 5px; -o-border-radius: 5px; border-radius: 5px; }
 
 .vac-title { margin-bottom: 8px; padding: 0 5px 0 12px; line-height: 70px; font-size: 18px; color: #fff; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 @media only screen and (max-width: 480px) { .vac-title { font-size: 16px; } }

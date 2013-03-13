@@ -16,7 +16,7 @@
         vertical-align: middle;
     }
     span {
-        @include respond-to(mob) {
+        @include respond-to(lan) {
             display: block;
         }
     }
@@ -82,10 +82,13 @@
         padding-left: 15px;
         margin-bottom: 15px;
         &:before {
-            content: "―";
+            content: "";
             position: absolute;
             left: 0;
-            top: -1px;
+            top: 9px;
+            width: 10px;
+            height: 1px;
+            background: #383838;
         }
     }
 }

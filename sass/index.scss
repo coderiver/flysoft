@@ -80,9 +80,11 @@
             margin-bottom: 12px;
         }
     }
-    .icon_tester {
-        margin-left: -16px;
-    }
+    // .icon_tester {
+    //     @include respond-to(pda) {
+    //         margin-left: -16px;
+    //     } 
+    // }
 }
 .job__item {
     display: inline-block;
