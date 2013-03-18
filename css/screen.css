@@ -127,8 +127,9 @@ a { color: #1682c5; }
 .team .icon_team { float: left; }
 
 .team__title { float: right; margin-top: 78px; line-height: 1; }
+@media only screen and (max-width: 480px) { .team__title { width: 40%; } }
 .team__title span { display: block; font-size: 30px; }
-@media only screen and (max-width: 480px) { .team__title span { font-size: 25px; } }
+@media only screen and (max-width: 480px) { .team__title span { font-size: 20px; } }
 
 .team__text { clear: both; padding-top: 25px; }
 

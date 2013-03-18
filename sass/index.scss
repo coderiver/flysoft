@@ -13,12 +13,14 @@
     float: right; 
     margin-top: 78px;
     line-height: 1;
-    
+    @include respond-to(lan) {
+        width: 40%;
+    } 
     span {
         display: block;
         font-size: 30px;
         @include respond-to(lan) {
-            font-size: 25px;
+            font-size: 20px;
         } 
     }
 }
