@@ -13,7 +13,7 @@ $icons: sprite-map("icons/*.png", $spacing: 10px);
 // responsive
 $break-small: 320px;
 $break-lan: 480px;
-$break-large: 550px;
+$break-large: 580px;
 @mixin respond-to($media) {
   @if $media == mob {
     @media only screen and (max-width: $break-small) { @content; }

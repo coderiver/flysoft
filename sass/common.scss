@@ -78,13 +78,17 @@ a {
     
 }
 .header__top {
-    padding: 19px 10px 5px;
+    padding: 19px 0 5px;
     @extend %clr;
     border-bottom: 1px solid #2a2a2a;
     @include background-image(linear-gradient(top, #000, #313131));
+    .soc {
+        margin-right: 10px;
+    }
 }
 .header__logo {
     float: left;
+    margin-left: 10px;
     a {
         display: block;
         @include sized-spriter($icons, logo);   
@@ -125,8 +129,9 @@ a {
     }
 }
 .header__bottom {
-    height: 126px;
+    height: 63px;
     background: url(../img/header-bg.png) 0 0 repeat-x;
+    @include background-size(auto, 100%);
 }
 /* -------------------------------------- //END Header ------------------------------------------ */
 

@@ -2,11 +2,10 @@
 
 .team { margin: -20px 0 28px; }
 .team .icon_team { float: left; }
-@media only screen and (max-width: 320px) { .team .icon_team { margin-left: -7px; } }
 
-.team__title { float: right; margin-top: 68px; line-height: 1; }
-@media only screen and (max-width: 320px) { .team__title { margin-right: -10px; } }
+.team__title { float: right; margin-top: 78px; line-height: 1; }
 .team__title span { display: block; font-size: 30px; }
+@media only screen and (max-width: 480px) { .team__title span { font-size: 25px; } }
 
 .team__text { clear: both; padding-top: 25px; }
 
@@ -18,18 +17,20 @@
 .ifunny { margin-bottom: 17px; }
 .ifunny .icon_smile { float: left; }
 
-.ifunny__main { float: right; padding-top: 38px; text-align: center; }
+.ifunny__main { float: right; margin-right: 17px; padding-top: 38px; text-align: center; }
 .ifunny__main .icon_ifunny { display: block; margin-bottom: 8px; }
 .ifunny__main .icon_android, .ifunny__main .icon_ios { vertical-align: middle; }
 
 .ifunny__about { clear: both; padding-top: 25px; }
+.ifunny__about a { font-size: 20px; }
 
 .jobs-wrap p { margin-bottom: 12px; }
 
 .job { padding: 18px 0 0 25px; text-align: justify; }
 .job ol li { margin-bottom: 12px; }
+@media only screen and (max-width: 580px) { .job .icon_tester { margin-left: -18px; } }
 
-.job__item { display: inline-block; vertical-align: top; }
+.job__item { display: inline-block; width: 125px; vertical-align: top; }
 .job__item:last-child { width: 100%; height: 0; }
 .job__item div { margin-bottom: 18px; height: 112px; line-height: 112px; }
 .job__item div .icon { vertical-align: bottom; }

@@ -75,7 +75,7 @@
 .vacancy {
     margin-top: 25px;
     ul {
-        margin-bottom: 12px;
+        margin-bottom: 30px;
     }
     li {
         position: relative;
@@ -92,8 +92,12 @@
         }
     }
 }
+.solary {
+    margin-top: -10px;
+    padding: 0 0 14px;
+}
 .info-item {
-    margin: 25px 0 32px;
+    margin: 33px 0 32px;
     padding: 15px 17px;
     border: 1px solid #aaa;
     @include border-radius(5px);
@@ -117,5 +121,5 @@
 .cookie-title {@include sized-spriter($icons, cookie);}
 
 .fb-like {
-    padding: 11px 0 0 37px;
+    padding-top: 11px;
 }
