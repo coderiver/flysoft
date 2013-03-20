@@ -49,8 +49,13 @@ a { color: #1682c5; }
 
 .nav { padding-top: 30px; clear: both; }
 .nav li { position: relative; float: left; width: 25%; text-align: center; }
-.nav li:last-child:after { display: none; }
+@media only screen and (max-width: 480px) { .nav li { width: 27%; } }
+@media only screen and (max-width: 480px) { .nav li:nth-child(1) { width: 24%; } }
+@media only screen and (max-width: 480px) { .nav li:nth-child(2) { width: 23%; } }
 .nav li:nth-child(2):after { right: 0; }
+@media only screen and (max-width: 480px) { .nav li:nth-child(3) { width: 26%; } }
+@media only screen and (max-width: 480px) { .nav li:nth-child(4) { width: 27%; } }
+.nav li:nth-child(4):after { display: none; }
 .nav li:after { content: ""; position: absolute; right: -7%; top: 5px; background: url('../img/icons-s07cd480cd8.png') 0 -3095px no-repeat; background-position: 0 -1548px; width: 9.5px; height: 11px; -moz-background-size: 300px 1575px; -webkit-background-size: 300px 1575px; background-size: 300px 1575px; }
 .nav a { color: #c1c1c1; text-decoration: none; }
 

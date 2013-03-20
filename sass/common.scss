@@ -105,14 +105,33 @@ a {
         float: left;
         width: 25%;
         text-align: center;
-        &:last-child {
-            &:after {
-                display: none;
+        @include respond-to(lan) {
+            width: 27%;
+        }
+        &:nth-child(1) {
+            @include respond-to(lan) {
+                width: 24%;
             }
         }
         &:nth-child(2) {
+            @include respond-to(lan) {
+                width: 23%;
+            }
             &:after {
                 right: 0;
+            }
+        }
+        &:nth-child(3) {
+            @include respond-to(lan) {
+                width: 26%;
+            }
+        } 
+        &:nth-child(4) {
+            @include respond-to(lan) {
+                width: 27%;
+            }
+            &:after {
+                display: none;
             }
         }
         &:after {
